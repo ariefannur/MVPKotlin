@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <View
+        android:id="@+id/imgView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginRight="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgView"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        tools:text="Title list"
+        />
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgView"
+        style="@style/Base.TextAppearance.AppCompat.Caption"
+        tools:text="desc"
+        android:layout_below="@+id/txtTitle"
+        android:maxLines="2"
+        />
+
+    <View
+        android:id="@+id/vOption"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:background="@android:drawable/ic_menu_more"
+        />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="12-12-2017"
+        android:layout_toLeftOf="@+id/vOption"
+        style="@style/Base.TextAppearance.AppCompat.Caption"
+        android:layout_marginRight="8dp"
+        />
+
+</RelativeLayout>
