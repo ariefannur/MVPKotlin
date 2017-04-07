@@ -1,4 +1,5 @@
 # MVP, CRUD with Kotlin
+![alt text](https://github.com/ariefannur/MVPKotlin/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
 
 Ini adalah sample project membuat simple CRUD menggunakan MVP dan Kotlin
 
