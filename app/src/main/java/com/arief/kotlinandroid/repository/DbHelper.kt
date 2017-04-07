@@ -39,7 +39,6 @@ class DbHelper : SQLiteOpenHelper {
         cv.put(COL_DATE, todo.mDate)
         return db.insert(TB_TODO, null, cv) > 0
 
-
     }
 
     fun getAllTodo(): List<Todo>{
@@ -60,11 +59,23 @@ class DbHelper : SQLiteOpenHelper {
     }
 
     fun updateData(todo: Todo): Boolean{
-        return true
+        val db: SQLiteDatabase = this.readableDatabase
+
+        var cv = ContentValues()
+        cv.put(COL_TITLE, todo.mTitle)
+        cv.put(COL_DESC, todo.mDesc)
+        cv.put(COL_DATE, todo.mDate)
+        cv.put(COL_ID, todo.mId)
+        val id = todo.mId
+        return db.update(TB_TODO, cv, "$COL_ID = $id", null) > 0
+
     }
 
     fun deleteData(id: Int): Boolean{
-        return true
+        val db: SQLiteDatabase = this.readableDatabase
+
+        return db.delete(TB_TODO, "$COL_ID = $id", null) > 0
+
     }
 
 }

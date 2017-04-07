@@ -35,10 +35,10 @@
 
     <View
         android:id="@+id/vOption"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_alignParentRight="true"
-        android:background="@android:drawable/ic_menu_more"
+        android:background="@mipmap/ic_more"
         />
 
     <TextView

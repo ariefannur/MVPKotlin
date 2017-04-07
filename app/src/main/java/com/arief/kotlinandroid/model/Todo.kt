@@ -18,4 +18,5 @@ class Todo (id: Int, title: String, desc: String, date: String){
         mDesc = desc
 
     }
+
 }
